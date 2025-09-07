@@ -1,0 +1,19 @@
+<!doctype html><meta charset="utf-8">
+<script>
+// SPA redirect for GitHub Pages
+(function() {
+  var l = window.location;
+  if (l.search) {
+    var q = {};
+    l.search.slice(1).split('&').forEach(function(v) {
+      var a = v.split('=');
+      q[a[0]] = a.slice(1).join('=');
+    });
+    if (q.p) {
+      window.history.replaceState(null, null, q.p + (q.q ? ('?' + q.q) : '') + l.hash);
+    }
+  }
+})();
+</script>
+<meta http-equiv="refresh" content="0; url=/cv/?p=/cv/%2F">
+<title>Redirecting…</title>
