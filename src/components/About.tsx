@@ -5,18 +5,18 @@ const About: React.FC = () => {
   const highlights = [
     {
       icon: Award,
-      title: "Excellence",
-      description: "Committed to delivering high-quality work and exceeding expectations in every project."
+      title: "Excelencia",
+      description: "Comprometido con garantizar la máxima calidad del software."
     },
     {
       icon: Target,
-      title: "Focus",
-      description: "Goal-oriented professional with a clear vision and strategic approach to challenges."
+      title: "Enfoque",
+      description: "Foco en el detalle y con la mejora continua de procesos."
     },
     {
       icon: Heart,
-      title: "Passion",
-      description: "Driven by genuine enthusiasm for growth and making meaningful contributions."
+      title: "Pasión",
+      description: "Impulsado por el entusiasmo en el aprendizaje continuo y por contribuir en proyectos que realmente marquen la diferencia."
     }
   ];
 
@@ -24,25 +24,27 @@ const About: React.FC = () => {
     <section id="about" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-accent mb-4">About Me</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-accent mb-4">Sobre mí</h2>
           <div className="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="animate-slide-up">
             <h3 className="text-2xl md:text-3xl font-bold text-accent mb-6">
-              Crafting Success Through Experience
+              Construyendo calidad a través de la experiencia
             </h3>
             <p className="text-lg text-accent/80 mb-6 leading-relaxed">
-              With a diverse background spanning multiple industries and roles, I bring a unique perspective to every challenge. My journey has been shaped by continuous learning, adaptability, and a commitment to excellence.
+              Con más de una década de experiencia como QA, aporto una perspectiva única gracias a mi participación en proyectos de diversos sectores.  
+              Mi trayectoria se ha guiado por el aprendizaje continuo, la adaptabilidad y un firme compromiso con la entrega de software fiable y de alta calidad.  
             </p>
             <p className="text-lg text-accent/80 mb-8 leading-relaxed">
-              I believe in the power of collaboration, innovation, and authentic relationships to drive meaningful results. Every experience has contributed to my growth as both a professional and an individual.
+              Creo en el poder de la colaboración, la innovación y la precisión para construir productos que realmente marquen la diferencia.  
+              Cada proyecto ha fortalecido mis habilidades como profesional de QA y como aliado de confianza en los equipos de desarrollo.
             </p>
             <div className="flex flex-wrap gap-4">
-              <span className="bg-secondary/10 text-secondary px-4 py-2 rounded-full font-medium">Problem Solver</span>
+              <span className="bg-secondary/10 text-secondary px-4 py-2 rounded-full font-medium">Resolutivo</span>
               <span className="bg-secondary/10 text-secondary px-4 py-2 rounded-full font-medium">Team Player</span>
-              <span className="bg-secondary/10 text-secondary px-4 py-2 rounded-full font-medium">Innovator</span>
+              <span className="bg-secondary/10 text-secondary px-4 py-2 rounded-full font-medium">Innovador</span>
             </div>
           </div>
 

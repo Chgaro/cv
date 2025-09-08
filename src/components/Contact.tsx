@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
+import { Mail, MapPin, Send, CheckCircle } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -12,7 +12,6 @@ const Contact: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically handle the form submission
     console.log('Form submitted:', formData);
     setIsSubmitted(true);
     setTimeout(() => setIsSubmitted(false), 3000);
@@ -27,19 +26,13 @@ const Contact: React.FC = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "cris@example.com",
-      href: "mailto:cris@example.com"
-    },
-    {
-      icon: Phone,
-      title: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "chgaro.dev@gmail.com",
+      href: "mailto:chgaro.dev@gmail.com"
     },
     {
       icon: MapPin,
-      title: "Location",
-      value: "City, State, Country",
+      title: "Ubicación",
+      value: "Sabadell, Barcelona",
       href: "#"
     }
   ];
@@ -48,16 +41,16 @@ const Contact: React.FC = () => {
     <section id="contact" className="py-20 bg-primary/20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-accent mb-4">Let's Connect</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-accent mb-4">¡Conectemos!</h2>
           <div className="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
           <p className="text-xl text-accent/70 mt-6 max-w-2xl mx-auto">
-            Ready to discuss opportunities or simply want to say hello? I'd love to hear from you.
+            Estoy abierto a nuevas oportunidades, colaboraciones o simplemente a compartir conocimientos. ¡No dudes en contactarme!
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           <div className="animate-slide-up">
-            <h3 className="text-2xl font-bold text-accent mb-8">Get In Touch</h3>
+            <h3 className="text-2xl font-bold text-accent mb-8">Contacto</h3>
             <div className="space-y-6">
               {contactInfo.map((info, index) => (
                 <a
@@ -79,18 +72,18 @@ const Contact: React.FC = () => {
 
           <div className="animate-slide-up" style={{ animationDelay: '0.2s' }}>
             <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-bold text-accent mb-6">Send a Message</h3>
+              <h3 className="text-2xl font-bold text-accent mb-6">Envía un mensaje</h3>
               
               {isSubmitted && (
                 <div className="mb-6 p-4 bg-secondary/10 border border-secondary/30 rounded-lg flex items-center space-x-2 animate-fade-in">
                   <CheckCircle size={20} className="text-secondary" />
-                  <span className="text-secondary font-medium">Message sent successfully!</span>
+                  <span className="text-secondary font-medium">¡Mensaje enviado!</span>
                 </div>
               )}
 
               <div className="grid md:grid-cols-2 gap-4 mb-4">
                 <div>
-                  <label htmlFor="name" className="block text-accent font-medium mb-2">Name</label>
+                  <label htmlFor="name" className="block text-accent font-medium mb-2">Nombre</label>
                   <input
                     type="text"
                     id="name"
@@ -99,7 +92,7 @@ const Contact: React.FC = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-accent/20 rounded-lg focus:ring-2 focus:ring-secondary focus:border-secondary transition-colors duration-300"
-                    placeholder="Your name"
+                    placeholder="Nombre"
                   />
                 </div>
                 <div>
@@ -112,13 +105,13 @@ const Contact: React.FC = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-accent/20 rounded-lg focus:ring-2 focus:ring-secondary focus:border-secondary transition-colors duration-300"
-                    placeholder="your.email@example.com"
+                    placeholder="tu.email@ejemplo.com"
                   />
                 </div>
               </div>
               
               <div className="mb-4">
-                <label htmlFor="subject" className="block text-accent font-medium mb-2">Subject</label>
+                <label htmlFor="subject" className="block text-accent font-medium mb-2">Asunto</label>
                 <input
                   type="text"
                   id="subject"
@@ -127,12 +120,12 @@ const Contact: React.FC = () => {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 border border-accent/20 rounded-lg focus:ring-2 focus:ring-secondary focus:border-secondary transition-colors duration-300"
-                  placeholder="Message subject"
+                  placeholder="Asunto del mensaje"
                 />
               </div>
               
               <div className="mb-6">
-                <label htmlFor="message" className="block text-accent font-medium mb-2">Message</label>
+                <label htmlFor="message" className="block text-accent font-medium mb-2">Mensaje</label>
                 <textarea
                   id="message"
                   name="message"
@@ -141,7 +134,7 @@ const Contact: React.FC = () => {
                   required
                   rows={5}
                   className="w-full px-4 py-3 border border-accent/20 rounded-lg focus:ring-2 focus:ring-secondary focus:border-secondary transition-colors duration-300 resize-none"
-                  placeholder="Your message here..."
+                  placeholder="Escribe tu mensaje aquí..."
                 ></textarea>
               </div>
               
@@ -150,7 +143,7 @@ const Contact: React.FC = () => {
                 className="w-full bg-secondary text-white py-3 px-6 rounded-lg font-medium hover:bg-secondary-dark transition-colors duration-300 flex items-center justify-center space-x-2 group"
               >
                 <Send size={20} className="group-hover:translate-x-1 transition-transform duration-300" />
-                <span>Send Message</span>
+                <span>Enviar mensaje</span>
               </button>
             </form>
           </div>

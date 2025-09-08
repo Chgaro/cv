@@ -1,12 +1,13 @@
 import React from 'react';
-import { Linkedin, Twitter, Github, Mail, Heart } from 'lucide-react';
+import { FaDiscord } from 'react-icons/fa';
+import { Linkedin, Github, Mail, Heart } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const socialLinks = [
-    { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
-    { icon: Github, href: 'https://github.com', label: 'GitHub' },
-    { icon: Mail, href: 'mailto:cris@example.com', label: 'Email' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/chgaro1986/', label: 'LinkedIn' },
+    { icon: Github, href: 'https://github.com/chgaro', label: 'GitHub' },
+    { icon: FaDiscord, href: 'https://discordapp.com/users/stur#3730', label: 'Discord' },
+    { icon: Mail, href: 'mailto:chgaro.dev@gmail.com', label: 'Email' },
   ];
 
   const scrollToTop = () => {
@@ -21,7 +22,7 @@ const Footer: React.FC = () => {
             onClick={scrollToTop}
             className="text-2xl font-bold hover:text-secondary transition-colors duration-300"
           >
-            Cris Resumee
+            CHGARO Web
           </button>
           
           <div className="flex space-x-6">
@@ -41,18 +42,18 @@ const Footer: React.FC = () => {
           
           <div className="text-center space-y-2">
             <p className="text-white/80">
-              Thank you for visiting my portfolio. Let's create something amazing together.
+              Gracias por visitar mi página. Vamos a colaborar y crear algo genial juntos.
             </p>
             <p className="flex items-center justify-center space-x-2 text-white/60">
               <span>Made with</span>
               <Heart size={16} className="text-secondary animate-pulse" />
-              <span>by Cris</span>
+              <span>by CHGARO</span>
             </p>
           </div>
           
           <div className="w-full border-t border-white/20 pt-6 text-center">
             <p className="text-white/60">
-              © {new Date().getFullYear()} Cris Resumee. All rights reserved.
+              © {new Date().getFullYear()} CHGARO Web. All rights reserved.
             </p>
           </div>
         </div>

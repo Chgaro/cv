@@ -14,21 +14,21 @@ const Hero: React.FC = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in">
           <h2 className="text-5xl md:text-7xl font-bold text-accent mb-6 animate-slide-up">
-            Hello, I'm <span className="text-secondary">Cris</span>
+            Hola, soy <span className="text-secondary">Cristian</span>
           </h2>
           <p className="text-xl md:text-2xl text-accent/80 mb-8 max-w-2xl mx-auto leading-relaxed animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            A passionate professional showcasing my journey through various experiences and achievements
+            QA Engineer con más de 10 años de experiencia en testing y gestión de equipos. Amante de la tecnología y curioso por naturaleza.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up" style={{ animationDelay: '0.4s' }}>
             <button
               onClick={scrollToAbout}
               className="bg-secondary text-white px-8 py-4 rounded-full font-medium hover:bg-secondary-dark transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
-              View My Story
+              Conoce más sobre mí
             </button>
             <button className="flex items-center space-x-2 text-accent hover:text-secondary transition-colors duration-300 font-medium border-2 border-accent hover:border-secondary px-8 py-4 rounded-full hover:bg-accent/5">
               <Download size={20} />
-              <span>Download CV</span>
+              <span>Descarga mi CV</span>
             </button>
           </div>
         </div>

@@ -5,10 +5,10 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigation = [
-    { name: 'Home', href: '#home', icon: Home },
-    { name: 'About', href: '#about', icon: User },
-    { name: 'Experience', href: '#experience', icon: Briefcase },
-    { name: 'Contact', href: '#contact', icon: Mail },
+    { name: 'Inicio', href: '#home', icon: Home },
+    { name: 'Sobre mi', href: '#about', icon: User },
+    { name: 'Experiencia', href: '#experience', icon: Briefcase },
+    { name: 'Contacto', href: '#contact', icon: Mail },
   ];
 
   const scrollToSection = (href: string) => {
@@ -25,7 +25,7 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center py-4">
           <div className="flex-shrink-0">
             <h1 className="text-2xl font-bold text-accent transition-colors duration-300 hover:text-accent-dark">
-              Cris Resumee
+              Cristian García
             </h1>
           </div>
 

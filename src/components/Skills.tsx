@@ -5,23 +5,23 @@ const Skills: React.FC = () => {
   const skillCategories = [
     {
       icon: Code,
-      title: "Technical Skills",
-      skills: ["Project Management", "Data Analysis", "Process Optimization", "Strategic Planning"]
+      title: "Skills Técnicas",
+      skills: ["Testing Manual", "Testing automatizado (Cypress)", "API Testing (Postman, Karate)", "Bug reporting (JIRA)", "Scripting (Python)"]
     },
     {
       icon: Users,
-      title: "Leadership",
-      skills: ["Team Management", "Mentoring", "Communication", "Conflict Resolution"]
+      title: "Liderazgo",
+      skills: ["Colaboración entre equipos", "Mentoring a QA juniors", "Mejora y optimización de procesos", "Comunicación efectiva"]
     },
     {
       icon: Lightbulb,
-      title: "Creative Skills",
-      skills: ["Problem Solving", "Innovation", "Design Thinking", "Content Creation"]
+      title: "Fortalezas Profesionales",
+      skills: ["Resolución de probelmas", "Gestión del tiempo y prioridades", "Documentación y reporte sólido"]
     },
     {
       icon: Zap,
-      title: "Core Competencies",
-      skills: ["Adaptability", "Critical Thinking", "Time Management", "Client Relations"]
+      title: "Competencias clave",
+      skills: ["Adaptabilidad", "Pensamiento crítico", "Propuestas de mejora", "Formación continua"]
     }
   ];
 
@@ -32,7 +32,7 @@ const Skills: React.FC = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-accent mb-4">Skills & Expertise</h2>
           <div className="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
           <p className="text-xl text-accent/70 mt-6 max-w-2xl mx-auto">
-            A comprehensive skill set developed through hands-on experience and continuous learning
+            Un conjunto sólido de habilidades QA desarrolladas mediante experiencia práctica, automatización y aprendizaje continuo.
           </p>
         </div>
 

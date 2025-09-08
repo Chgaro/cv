@@ -4,39 +4,39 @@ import { Calendar, MapPin, ChevronRight } from 'lucide-react';
 const Experience: React.FC = () => {
   const experiences = [
     {
-      title: "Senior Professional",
-      company: "Current Company",
-      location: "City, State",
-      period: "2022 - Present",
-      description: "Leading innovative projects and driving strategic initiatives that deliver measurable business value.",
+      title: "Senior QA Mobile",
+      company: "Win Systems",
+      location: "Sant Cugat del Vallès",
+      period: "2025",
+      description: "Liderando iniciativas de testing para WinUP, aplicación de pagos y gestión de casinos (web, móvil iOS/Android y backoffice).",
       achievements: [
-        "Increased team productivity by 40% through process optimization",
-        "Led cross-functional teams of 10+ members",
-        "Implemented new systems that reduced costs by 25%"
+        "Reducción significativa del tiempo de pruebas mediante la creación de scripts y automatización de flujos (datos de prueba, ejecución y diseño).",
+        "Validación de integraciones de pago complejas (Redsys, Nuvei, Google Pay, Apple Pay), garantizando transacciones seguras y fiables",
+        "Incremento de la cobertura de pruebas combinando testing manual, pruebas automatizadas de API (Karate, ApiDOG) y validaciones SQL."
       ]
     },
     {
-      title: "Mid-Level Professional",
-      company: "Previous Company",
-      location: "City, State",
-      period: "2019 - 2022",
-      description: "Developed expertise in core competencies while contributing to major organizational goals.",
+      title: "Senior QA / Team Lead",
+      company: "GRIFOLS",
+      location: "Parets del Vallès",
+      period: "2017 - 2023",
+      description: "Responsable de QA para SGP, sistema de gestión de plasma donado y su transporte en condiciones críticas.",
       achievements: [
-        "Managed high-priority projects worth $500K+",
-        "Mentored 5 junior team members",
-        "Achieved 95% client satisfaction rating"
+        "Lideré la implementación de QA de SGP en Egipto desde cero, con despliegue exitoso adaptado a requisitos locales estrictos.",
+        "Mejora de la calidad y de los tiempos de entrega mediante la mentoría y guía de varios miembros del equipo de QA.",
+        "Ejecución de pruebas prácticas en software y hardware (dispositivos RFID, escáneres de código de barras, logística médica)."
       ]
     },
     {
-      title: "Entry-Level Position",
-      company: "First Company",
-      location: "City, State",
-      period: "2017 - 2019",
-      description: "Established foundation skills and gained valuable industry experience in a fast-paced environment.",
+      title: "Junior QA",
+      company: "GFT",
+      location: "Sant Cugat del Vallès",
+      period: "2015 - 2017",
+      description: "Participación en el testing de sistemas de transacciones de Deutsche Bank, asegurando su fiabilidad mediante pruebas funcionales y de regresión.",
       achievements: [
-        "Completed comprehensive training program",
-        "Contributed to 3 successful product launches",
-        "Received Employee of the Month award"
+        "Refuerzo de las pruebas de regresión mediante el mantenimiento y ejecución de suites de pruebas completas.",
+        "Colaboración estrecha con equipos de desarrollo para analizar nuevas funcionalidades y resolver defectos.",
+        "Ejecución de pruebas manuales consistentes bajo la supervisión del Test Lead."
       ]
     }
   ];
@@ -45,10 +45,10 @@ const Experience: React.FC = () => {
     <section id="experience" className="py-20 bg-primary/20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-accent mb-4">Experience</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-accent mb-4">Experiencia</h2>
           <div className="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
           <p className="text-xl text-accent/70 mt-6 max-w-2xl mx-auto">
-            A journey of growth, learning, and meaningful contributions across diverse roles
+            De los bugs a los logros: impulsando la calidad en cada paso.
           </p>
         </div>
 
@@ -75,7 +75,7 @@ const Experience: React.FC = () => {
                   <div className="lg:col-span-2">
                     <p className="text-accent/80 mb-6 leading-relaxed text-lg">{exp.description}</p>
                     <div>
-                      <h5 className="font-bold text-accent mb-3">Key Achievements:</h5>
+                      <h5 className="font-bold text-accent mb-3">Logros:</h5>
                       <ul className="space-y-2">
                         {exp.achievements.map((achievement, idx) => (
                           <li key={idx} className="flex items-start space-x-2">
