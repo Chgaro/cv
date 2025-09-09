@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
               Conoce más sobre mí
             </button>
             <a
-              href="/cv.pdf"
+              href="/cv/cv.pdf"
               download
               className="flex items-center space-x-2 text-accent hover:text-secondary transition-colors duration-300 font-medium border-2 border-accent hover:border-secondary px-8 py-4 rounded-full hover:bg-accent/5"
             >
